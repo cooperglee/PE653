@@ -42,6 +42,30 @@ preferences {
 }
 
 metadata {
+	definition (name: "Intermatic PE653 Pool Controller", author: "bigpunk6") {
+		capability "Switch"
+		capability "Polling"
+		capability "Configuration"
+		capability "Refresh"
+
+		attribute "switch1", "string"
+		attribute "switch2", "string"
+		attribute "switch3", "string"
+		attribute "switch4", "string"
+		attribute "switch5", "string"
+
+		command "on1"
+		command "off1"
+		command "on2"
+		command "off2"
+		command "on3"
+		command "off3"
+		command "on4"
+		command "off4"
+		command "on5"
+		command "off5"
+	}
+
 	// tile definitions
 	tiles {
 		standardTile("switch1", "device.switch1",canChangeIcon: true) {
