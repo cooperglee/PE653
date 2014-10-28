@@ -31,7 +31,7 @@
 
 
 preferences {
-    input "operationMode1", "enum", title: "Boster Pump",
+    input "operationMode1", "enum", title: "Booster Pump",
         metadata: [values: ["No",
                             "Uses Circuit-1",
                             "Variable Speed pump Speed-1",
